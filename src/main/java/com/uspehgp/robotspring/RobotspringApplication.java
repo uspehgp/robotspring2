@@ -1,10 +1,11 @@
 package com.uspehgp.robotspring;
 
 import com.uspehgp.robotspring.impls.robot.ModelT1000;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-//@SpringBootApplication
+@SpringBootApplication
 public class RobotspringApplication {
 
     public static void main(String[] args) {
