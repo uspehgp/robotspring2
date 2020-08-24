@@ -1,13 +1,18 @@
 package com.uspehgp.robotspring;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.uspehgp.robotspring.impls.robot.ModelT1000;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class RobotspringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RobotspringApplication.class, args);
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+        ModelT1000 t1000 = (ModelT1000) context.getBean("t1000");
+        t1000.dance();
+        //SpringApplication.run(RobotspringApplication.class, args);
     }
 
 }
