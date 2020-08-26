@@ -28,7 +28,7 @@
     </bean>
 
     <bean id="sonyHand" class="com.uspehgp.robotspring.impls.sony.SonyHand"/>
-    <bean id="sonyHead" class="com.uspehgp.robotspring.impls.sony.SonyHead"/>
+    <bean id="sonyHead" class="com.uspehgp.robotspring.impls.sony.SonyHead" scope="singleton"/>
     <bean id="sonyLeg" class="com.uspehgp.robotspring.impls.sony.SonyLeg"/>
 
     <bean id="toshibaHand" class="com.uspehgp.robotspring.impls.toshiba.ToshibaHand"/>
