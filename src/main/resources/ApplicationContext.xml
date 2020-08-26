@@ -2,12 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-destroy-method="destroyObject"
+       default-init-method="initObject"
+>
 
     <bean id="t1000" class="com.uspehgp.robotspring.impls.robot.ModelT1000"
-          p:hand-ref="toshibaHand"
+          p:hand-ref="toshibaHand"  scope="prototype"
           p:leg-ref="sonyLeg"
-          p:head-ref="sonyHead" scope="prototype"
+          p:head-ref="sonyHead"
     >
         <!--<property name="hand" ref="toshibaHand"/>
         <property name="leg" ref="toshibaLeg"/>
@@ -28,7 +31,7 @@
     </bean>
 
     <bean id="sonyHand" class="com.uspehgp.robotspring.impls.sony.SonyHand"/>
-    <bean id="sonyHead" class="com.uspehgp.robotspring.impls.sony.SonyHead" scope="singleton"/>
+    <bean id="sonyHead" class="com.uspehgp.robotspring.impls.sony.SonyHead"/>
     <bean id="sonyLeg" class="com.uspehgp.robotspring.impls.sony.SonyLeg"/>
 
     <bean id="toshibaHand" class="com.uspehgp.robotspring.impls.toshiba.ToshibaHand"/>

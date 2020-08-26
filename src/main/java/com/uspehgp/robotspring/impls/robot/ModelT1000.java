@@ -103,4 +103,12 @@ public class ModelT1000 implements Robot {
 	public boolean isSoundEnabled() {
 		return soundEnabled;
 	}
+
+	private void initObject() {
+		System.out.println("init");
+	}
+
+	private void destroyObject() {
+		System.out.println("destroy");
+	}
 }
