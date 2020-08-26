@@ -7,7 +7,7 @@
     <bean id="t1000" class="com.uspehgp.robotspring.impls.robot.ModelT1000"
           p:hand-ref="toshibaHand"
           p:leg-ref="sonyLeg"
-          p:head-ref="toshibaHead"
+          p:head-ref="sonyHead" scope="prototype"
     >
         <!--<property name="hand" ref="toshibaHand"/>
         <property name="leg" ref="toshibaLeg"/>
