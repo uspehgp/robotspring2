@@ -5,10 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
        default-destroy-method="destroyObject"
        default-init-method="initObject"
+       default-lazy-init="true"
 >
 
     <bean id="t1000" class="com.uspehgp.robotspring.impls.robot.ModelT1000"
-          p:hand-ref="toshibaHand"  scope="prototype"
+          p:hand-ref="toshibaHand"
           p:leg-ref="sonyLeg"
           p:head-ref="sonyHead"
     >

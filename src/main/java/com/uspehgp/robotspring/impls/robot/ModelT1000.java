@@ -105,7 +105,7 @@ public class ModelT1000 implements Robot {
 	}
 
 	private void initObject() {
-		System.out.println("init");
+		System.out.println("init!");
 	}
 
 	private void destroyObject() {
