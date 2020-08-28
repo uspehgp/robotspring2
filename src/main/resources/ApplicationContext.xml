@@ -3,8 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-       default-destroy-method="destroyObject"
-       default-init-method="initObject"
        default-lazy-init="true"
 >
 
@@ -38,5 +36,7 @@
     <bean id="toshibaHand" class="com.uspehgp.robotspring.impls.toshiba.ToshibaHand"/>
     <bean id="toshibaHead" class="com.uspehgp.robotspring.impls.toshiba.ToshibaHead"/>
     <bean id="toshibaLeg" class="com.uspehgp.robotspring.impls.toshiba.ToshibaLeg"/>
+
+    <bean class="com.uspehgp.robotspring.MyBeanPostProcessor"/>
 
 </beans>
